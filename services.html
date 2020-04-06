@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Car Market</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+      <script type="text/javascript">
+      function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+
+    
+
+
+  </script>
+
+
+
+
+
+
+
+
+</head>
+
+<body onload="startTime()">
+
+  <header>
+        <div id ="logoImg">
+            <img src="images/logo.png" alt="Car Market">
+        </div>
+        <p ><div id="txt" style="color:#1E9AFE; margin-right:5px; margin-top: 10px; position:relative; float:right; font-weight:bold"></div></p>
+        <div id ="headNav">
+            <nav>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="appointment.html">Contact</a></li>
+          <li><a href="loginRegister.html">SignIn/Up</a></li>
+          </ul>
+            </nav>
+         </div>
+  
+        <div id ="headImgService">
+          <img src="images/hyundaiBanner1.png" alt="Car Market">
+        </div>  
+  </header>
+  
+
+
+
+  
+<main>
+
+
+
+    <br>
+    <h1 style="color:#2E9AFE;"><b>Find Your Car<b></h1>
+    <div id="gridimg">
+
+
+
+
+    <figure>
+    <img src="images/cars/Azera.png" height="150px" width="250px" />
+    <figcaption1>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Azera</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Theta 2.4 GDi 6 Speed Automatic FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Azera</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2600$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/azera/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+              </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption1>
+  </figure>
+
+
+  
+
+
+
+
+  <figure>
+    <img src="images/cars/Elantra.png" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Elantra</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+                <tr>
+                    <td>Product label</td>
+                    <td>Gamma 1.6 MPi 6 Speed Manual FWD</td>
+                    
+                </tr>
+                <tr>
+                    <td>Model name</td>
+                    <td>Elantra</td>
+                    
+                </tr>
+                <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2100$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/elantra/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <img src="images/cars/Eon.png"height="150px" width="250px"  />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Eon</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Epsilon 0.8 MPi (EU 2/3/4) 5-Speed Manual FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Eon</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>1600$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/eon/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <img src="images/cars/i20 Coupe.png" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">i20 Coupe</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>UII 1.4 CRDi 6 Speed Manual FWD #1</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>i20 Coupe</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>1800$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/i20-coupe'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <img src="images/cars/i20.png" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">i20</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Kappa 1.25 MPi 5 Speed Manual FWD #1</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>i20</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>18500$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/i20'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+ 
+
+
+
+
+
+  <figure>
+    <img src="images/cars/i30.png" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">i30</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Gamma 1.6 MPi 6 Speed Manual FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>i30</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/i30'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <img src="images/cars/i40.png" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">i40</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Nu 2.0 GDi 6 Speed Automatic FWD #1</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>i40</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/i40'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+ 
+
+
+
+
+  <figure>
+    <img src="images/cars/Kona.png" height="150px" width="250px" />
+    <figcaption>
+     
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Kona</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Theta II 2.0 T-GDi (EU2) 6 Speed Automatic FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Sonata Turbo</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/sonata-turbo/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+   
+  
+
+
+
+  <figure>
+    <img src="images/cars/Sonata Turbo.png" height="150px" width="250px" />
+    <figcaption>
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Sonata Turbo</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Theta II 2.0 T-GDi (EU2) 6 Speed Automatic FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Sonata Turbo</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/sonata-turbo/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+  
+
+
+
+
+  <figure>
+    <img src="images/cars/Sonata.png" height="150px" width="250px" />
+    <figcaption>
+     
+    <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Sonata</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Theta II 2.0 T-GDi (EU2) 6 Speed Automatic FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Sonata Turbo</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/sonata-turbo/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+
+
+
+
+
+  <figure>
+    <img src="images/cars/Veloster.png" height="150px" width="250px" />
+    <figcaption>
+      
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Veloster</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+                </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+                 <tr>
+                    <td>Product label</td>
+                    <td>Theta II 2.0 T-GDi (EU2) 6 Speed Automatic FWD</td>
+                    
+                </tr>
+                 <tr>
+                    <td>Model name</td>
+                    <td>Sonata Turbo</td>
+                    
+                </tr>
+                <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/sonata-turbo/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    
+    </figcaption>
+  </figure>
+
+
+
+
+    <figure>
+    <img src="images/cars/Venu.png" height="150px" width="250px" />
+    <figcaption>
+      <p><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'" style="color:#1E9AFE">Venu</a></p>
+      <div id="light" class="white_content" ><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" style="color:Red">Close</a>
+
+        <p><div id ="time" >
+              <h2 style="color:#1E9AFE">Car Specification</h2>
+              <br>
+          <table style="color:#000000">
+                <tr >
+             <th>Overview</th>
+                     <th></th>
+                     
+        </tr>
+                <tr>
+                    <td>Category</td>
+                    <td>Cars</td>
+                    
+                </tr>
+        <tr>
+                    <td>Product label</td>
+                    <td>Theta II 2.0 T-GDi (EU2) 6 Speed Automatic FWD</td>
+                    
+                </tr>
+        <tr>
+                    <td>Model name</td>
+                    <td>Sonata Turbo</td>
+                    
+                </tr>
+        <tr>
+                    <td>Seats</td>
+                    <td>5</td>
+                   
+                </tr>
+
+                <tr>
+                    <td>Price</td>
+                    <td>2200$</td>
+                   
+                </tr>
+        
+      
+              </table>
+              <br>
+              <div class="row" align="right">
+                <button type="button" onclick="location.href='https://www.hyundai.com/worldwide/en/cars/sonata-turbo/highlights'" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>SEE FULL SPECS</strong></button>
+                <button type="button" onclick="alert('Car is Booked')" style="border-radius: 6px; background-color:#2E9AFE;  height:30px; color:#ffffff; padding-right: 10px; padding-left: 10px" ><strong>BOOK YOUR CAR</strong></button>
+              
+          </div>
+
+        
+       </div>
+    
+    </p>
+        
+     </div>
+     <div id="fade" class="black_overlay"></div>
+      
+    </figcaption>
+  </figure>
+</div>
+  
+
+  </main>
+
+
+
+
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+   <div class="footer" >
+    <div id="bbb" style="margin-left:125px; margin-top: 0px; position:relative; float:left;">
+        
+          <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="services.html">Shop Now</a></p>
+          <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="about.html">Know About Us</a></p>
+          <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff;" href="appointment.html">Contact Us</a></p>
+      
+    
+      </div>
+
+      <div id="bbb" style="color:#1E9AFE; margin-right:125px; margin-top: 10px; position:relative; float:right; font-weight:bold">
+        
+          
+          
+          <p style="color:#1E9AFE; font-family: arial; font-size: 15px">Welcome To Car Market</p>
+          
+          <p style="color:#ffffff; font-family: arial; font-size: 13px">Email us at : kulsinggh@gmail.com</p>
+          
+          <p style="color:#ffffff;font-family: arial; font-size: 13px">Call us at : 514-292-1514</p>
+      
+    
+      </div>
+     
+     <div id ="icons" >
+      
+         <a href="https://www.facebook.com/"><img src="images/fb.png" style="height:40px;width:40px;"> 
+       <a href="https://twitter.com/login"><img src="images/twitter.png" style="height:40px;width:40px;"> 
+       <a href="https://www.youtube.com/"><img src="images/youtube.png" style="height:40px;width:40px;">
+
+      </div>
+      <div>
+      
+       <p style="color:white; margin-top: 15px;">&copy;  Copyright 2018 Cegep College | Website by Car Market.</p>
+       </div>
+    
+    </div>
+        
+  
+      
+    
+    
+</body>
+</html>

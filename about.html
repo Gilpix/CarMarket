@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head >
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Car Market</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript">
+    	function startTime() {
+  		var today = new Date();
+  		var h = today.getHours();
+  		var m = today.getMinutes();
+  		var s = today.getSeconds();
+  		m = checkTime(m);
+  		s = checkTime(s);
+  		document.getElementById('txt').innerHTML =
+  		h + ":" + m + ":" + s;
+  		var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+  		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  		return i;
+		}
+
+	</script>
+</head>
+
+<body onload="startTime()">
+
+	<header>
+	    <div id ="logoImg">
+	        <img src="images/logo.png" alt="Car Market Logo">
+	    </div>
+	    <p ><div id="txt" style="color:#1E9AFE; margin-right:5px; margin-top: 10px; position:relative; float:right; font-weight:bold"></div></p>
+	    <div id ="headNav">
+	        <nav>
+		      <ul>
+			     <li><a href="index.html">Home</a></li>
+			    <li><a href="services.html">Shop</a></li>
+			    <li><a href="about.html">About</a></li>
+			    <li><a href="appointment.html">Contact</a></li>
+			    <li><a href="loginRegister.html">SignIn/Up</a></li>
+			
+		      </ul>
+	        </nav>
+	    </div>
+	
+	    <div id ="headImgAbout">
+	      <img src="images/about.jpg" alt="Car Market">
+	    </div>	
+	</header>
+	
+	
+	<main >
+		<section style="margin-bottom: 140px">
+		  <marquee><h2 style="color:#FFFFFF;">Have Questions? Get in Touch <a href="appointment.html" style="color:#1E9AFE;">Contact Us</h2></marquee>
+		
+		  <article style="color:#2C3539;">
+			<h2 style="color:#1E9AFE; font-size:35px" align="center"  ">ABOUT US</h2>
+			<p>Welcome to Car Market in Canada. Car Market treats the needs of each individual customer with great concern. We know that you have high expectations, and as a car dealer we enjoy the challenge of meeting and exceeding those standards each and every time. Allow us to demonstrate our commitment to customer service!
+			Our experienced sales staff is eager to share its knowledge and enthusiasm with you. We encourage you to browse our online inventory, schedule a test drive and investigate financing options. We offer a large variety of vehicles by Hyundai.</p>
+			<br>
+			
+
+			<h3 style="color:#1E9AFE;">NO DEALERSHIPS </h3>
+			<p><u>And no middle men</u></p>
+				<p>Cutting out the dealerships translates to lower cost for us on every vehicle we sell. What does that mean for you? We pass the savings on to you in four ways: lower prices, premium cars, a better experience, and no hidden fees.  </p>
+				<br>
+
+
+			    <h3 style="color:#1E9AFE;">CARS YOU CAN COUNT ON </h3>
+			    <p><u>Every car in our inventory is certified</u></p>
+				<p>At Car Market, we know that trust begins and ends with the car, which is why every vehicle we sell comes Car-Market Certified. The process begins well before you land on our site with our rigorous inspection and reconditioning process, and it continues long after we leave your driveway with our 100 day/4,189 mile “Worry Free Guarantee.”  </p>
+				<br>
+
+
+				<h3 style="color:#1E9AFE;">BETTER THAN A TRADITIONAL TEST DRIVE </h3>
+				<p><u>Try out your Carvana purchase for 7 days</u></p>
+
+				<p>We understand that buying a car is an important life decision. That's why every Car-Market car we sell comes with a 7-Day Money Back Guarantee. Take the time and see if the car fits with your life. Show it to your friends. Get it checked out by a trusted mechanic. Once the week is up, if for any reason you don't love it, we'll take it back.  </p>
+				<br>
+			      
+				<p>We look forward to seeing you soon and addressing any car buying concern you may have.</p>
+				<br><br>
+
+		   </article>
+		</section>
+
+	
+		
+		 
+	</main>
+	<br>
+
+	    
+  
+   <div class="footer" >
+		<div id="bbb" style="margin-left:125px; margin-top: 0px; position:relative; float:left;">
+		  	
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="services.html">Shop Now</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="about.html">Know About Us</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff;" href="appointment.html">Contact Us</a></p>
+			
+		
+		  </div>
+
+		  <div id="bbb" style="color:#1E9AFE; margin-right:125px; margin-top: 10px; position:relative; float:right; font-weight:bold">
+		  	
+		  		
+		  		
+		  		<p style="color:#1E9AFE; font-family: arial; font-size: 15px">Welcome To Car Market</p>
+		  		
+			    <p style="color:#ffffff; font-family: arial; font-size: 13px">Email us at : kulsinggh@gmail.com</p>
+			    
+			    <p style="color:#ffffff;font-family: arial; font-size: 13px">Call us at : 514-292-1514</p>
+			
+		
+		  </div>
+		 
+		 <div id ="icons" >
+		 	
+		     <a href="https://www.facebook.com/"><img src="images/fb.png" style="height:40px;width:40px;"> 
+			 <a href="https://twitter.com/login"><img src="images/twitter.png" style="height:40px;width:40px;"> 
+			 <a href="https://www.youtube.com/"><img src="images/youtube.png" style="height:40px;width:40px;">
+
+		  </div>
+		  <div>
+		  
+		   <p style="color:white; margin-top: 15px;">&copy;  Copyright 2018 Cegep College | Website by Car Market.</p>
+		   </div>
+		
+		</div>
+	
+</body>
+</html>

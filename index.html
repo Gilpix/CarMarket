@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Car Market</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <script type="text/javascript">
+    	function startTime() {
+  		var today = new Date();
+  		var h = today.getHours();
+  		var m = today.getMinutes();
+  		var s = today.getSeconds();
+  		m = checkTime(m);
+  		s = checkTime(s);
+  		document.getElementById('txt').innerHTML =
+  		h + ":" + m + ":" + s;
+  		var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+  		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  		return i;
+		}
+
+	
+
+
+
+    	(function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );
+				
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+				
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+				
+			}, false);
+		}
+		
+		
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		
+		var slider = new Slideshow( "#main-slider" );
+		
+	});
+	
+	
+})();
+
+
+    	
+
+
+
+
+    </script>
+
+</head>
+
+<body onload="startTime()">
+  <div id="container">
+    
+
+     <header>
+
+	      <div id ="logoImg">
+	      <img src="images/logo.png" alt="Car Market">
+	      </div>
+	      <p ><div id="txt" style="color:#1E9AFE; margin-right:5px; margin-top: 10px; position:relative; float:right; font-weight:bold"></div></p>
+	      
+	     <div id ="headNav" >
+	       <nav>
+		      <ul>
+			    <li><a href="index.html">Home</a></li>
+			    <li><a href="services.html">Shop</a></li>
+			    <li><a href="about.html">About</a></li>
+			    <li><a href="appointment.html">Contact</a></li>
+			    <li><a href="loginRegister.html">SignIn/Up</a></li>
+
+			  </ul>
+
+			</nav>
+	     </div>
+
+		
+	 </header>
+	
+        <main>
+            <div class="mobile">
+                <video width="100%" controls autoplay>
+                <source src="images/Hyundai.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+               
+        </main>
+		
+		<div id="intro">
+		    <div id ="introPart1"> <img class="partImg" style="height:350px;" src="images/hyndaiVenu.png" alt="thumb Logo"> </div>
+			<div id ="introPart2"><h1 style="color:#2E9AFE;"><b>The First Ever -
+HYUNDAI VENUE<b></h1>
+			   <h3 style="color:#FFFFFF;">Where Comfort & Convenience Is Our Top Priority</h3>
+
+
+               <p style="color:#FFFFFF; font-family: arial, sans-serif; font-size:15px;">Introducing the first-ever Venue, an urban utility vehicle with a larger-than-life personality and style to match. Perfectly suited for the hustle and grind of city life, it’s loaded with a long list of advanced safety and connectivity features. So take on the concrete jungle with confidence. Exuding uniqueness in a dynamic urban city full of excitement, you always deserve respect.
+A two-toned Venue arrests everyone’s attention and establishes a formidable presence.
+
+			   <br> 
+			   <br> <br>
+
+               To get full specification of Hyundai Venue email us at kulsinggh@gmail.com</p>
+               <p style="color:#1E9AFE; font-size: 15px"><a style="color:#1E9AFE; " href="services.html">Buy Hyundai Venue</a></p>
+
+               <h3 style="color:#2E9A1E;"><b><a href="https://www.hyundaiusa.com/venue/index.aspx?cmpid=RF_SM_YouTube_H00000622" style="color:#1E9AFE;">Click To See More</font></a></b></h3>
+
+			</div>
+		</div>	
+		
+		 </div>
+
+
+
+
+
+
+		 <div class="slider" id="main-slider" align="left"><!-- outermost container element -->
+	<div class="slider-wrapper"><!-- innermost wrapper element -->
+		<img src="images/v5.jpg" alt="First" class="slide" /><!-- slides -->
+		<img src="images/v2.jpg" alt="Second" class="slide" />
+		<img src="images/v3.jpg" alt="Third" class="slide" />
+		<img src="images/v4.jpg" alt="Second" class="slide" />
+		<img src="images/v1.jpg" alt="Third" class="slide" />
+	</div>
+</div>	
+
+
+    <br><br><br><br><br><br><br>
+
+
+
+
+
+       <div class="footer" >
+		<div id="bbb" style="margin-left:125px; margin-top: 0px; position:relative; float:left;">
+		  	
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="services.html">Shop Now</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="about.html">Know About Us</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff;" href="appointment.html">Contact Us</a></p>
+			
+		
+		  </div>
+
+		  <div id="bbb" style="color:#1E9AFE; margin-right:125px; margin-top: 10px; position:relative; float:right; font-weight:bold">
+		  	
+		  		
+		  		
+		  		<p style="color:#1E9AFE; font-family: arial; font-size: 15px">Welcome To Car Market</p>
+		  		
+			    <p style="color:#ffffff; font-family: arial; font-size: 13px">Email us at : kulsinggh@gmail.com</p>
+			    
+			    <p style="color:#ffffff;font-family: arial; font-size: 13px">Call us at : 514-292-1514</p>
+			
+		
+		  </div>
+		 
+		 <div id ="icons" >
+		 	
+		     <a href="https://www.facebook.com/"><img src="images/fb.png" style="height:40px;width:40px;"> 
+			 <a href="https://twitter.com/login"><img src="images/twitter.png" style="height:40px;width:40px;"> 
+			 <a href="https://www.youtube.com/"><img src="images/youtube.png" style="height:40px;width:40px;">
+
+		  </div>
+		  <div>
+		  
+		   <p style="color:white; margin-top: 15px;">&copy;  Copyright 2018 Cegep College | Website by Car Market.</p>
+		   </div>
+		
+		</div>
+	
+        
+
+   
+  
+</body>
+
+</html>

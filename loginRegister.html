@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Car Market</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script>
+    	function startTime() {
+  		var today = new Date();
+  		var h = today.getHours();
+  		var m = today.getMinutes();
+  		var s = today.getSeconds();
+  		m = checkTime(m);
+  		s = checkTime(s);
+  		document.getElementById('txt').innerHTML =
+  		h + ":" + m + ":" + s;
+  		var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+  		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  		return i;
+		}
+
+
+
+
+
+
+
+          function validateForm() {
+          
+          if( document.myForm.name.value == "" ) {
+           alert("Name must be filled out");
+          return false;
+           }
+		   
+		   if( document.myForm.email.value == "" ) {
+           alert("Email must be filled out");
+          return false;
+           }
+		   
+		   if( document.myForm.phn.value == "" ) {
+           alert("Phone number must be filled out");
+          return false;
+           }
+		   
+		   if( document.myForm.password.value == "" ) {
+           alert("Password must be filled out");
+          return false;
+           }
+		   
+		   else{
+		    alert("Information submitted Successfully");
+			return true;
+			}
+         }
+
+
+         function validateLoginForm() {
+          
+         
+		   
+		   if( document.myLoginForm.email.value == "" ) {
+           alert("Email must be filled out");
+          return false;
+           }
+		   
+		   if( document.myLoginForm.password.value == "" ) {
+           alert("Password number must be filled out");
+          return false;
+           }
+		
+		   
+		   else{
+		    alert("Information submitted Successfully");
+			return true;
+			}
+         }
+
+
+
+
+
+     </script>
+</head>
+
+<body onload="startTime()">
+
+	<div id="container">
+
+	
+	<header>
+	<div id ="logoImg">
+	<img src="images/logo.png" alt="Car Market">
+	</div>
+	<p ><div id="txt" style="color:#1E9AFE; margin-right:5px; margin-top: 10px; position:relative; float:right; font-weight:bold"></div></p>
+	<div id ="headNav">
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			    <li><a href="services.html">Shop</a></li>
+			    <li><a href="about.html">About</a></li>
+			    
+			    <li><a href="appointment.html">Contact</a></li>
+			    <li><a href="loginRegister.html">SignIn/Up</a></li>
+			
+		</ul>
+	</nav>
+	</div>
+	
+	
+	<div id ="headImgLogin" >
+	<img src="images/santafe-sport-header.jpg" alt="Car Market">
+	</div>	
+	</header>
+	
+	<main align="center">
+
+		
+		<h1 style="color:#1E9AFE"><center>Welcome To Car Market</center></h1>
+		<h3 style="color:#1E9AFE"><center>Login or Register To Get Ahead Of The Queue.</center></h3>
+
+
+      <div id="frm">
+        <form name="myForm" onsubmit="return (validateForm())">
+           <h2 align="center" style="color:#1E9AFE; margin-bottom: 40px;">REGISTER NOW!</h3>
+
+           
+           
+   
+
+
+    
+
+
+      <div class="col1" align="center">
+        <label for="email">Name*</label>
+      </div>
+      <div class="col2" align="center">
+        <input type="text"  name="name" placeholder="Enter your name..">
+      </div>
+   
+
+
+
+   
+      <div class="col1" align="center">
+        <label for="email">Email*</label>
+      </div>
+      <div class="col2" align="center">
+        <input type="text"  name="email" placeholder="Enter your email..">
+      </div>
+
+
+
+
+      <div class="col1" align="center">
+        <label for="phn">Phone*</label>
+      </div>
+      <div class="col2" align="center">
+        <input type="text"  name="phn" placeholder="Enter your phone no..">
+      </div>
+
+	
+      <div class="col1" align="center">
+        <label for="address">Password</label>
+      </div>
+      <div class="col2" align="center">
+        <input type="text"  name="address" placeholder="Enter your password..">
+      </div>
+      <br>
+
+
+	    
+    <div class="row" align="center">
+    	
+      <input type="submit" value="REGISTER">
+      	
+    </div>
+	 <br>
+	 
+		
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+<div id="frmLogin" >
+
+        <form name="myLoginForm" onsubmit=" return (validateLoginForm())" >
+           <h2 align="center" style="color:#1E9AFE">LOGIN!</h3>
+           	<br>
+           
+           <img class="loginImg"  src="images/logo1.png" alt="thumb Logo" align="center">
+           <br><br>
+   
+   
+      <div class="col1Log" align="center">
+        <label for="email">Email*</label>
+      </div>
+      <div class="col2Log" align="center">
+        <input type="textLogin"  name="email" placeholder="Enter your email..">
+      </div>
+
+
+
+	
+      <div class="col1Log" align="center">
+        <label for="address">Password</label>
+      </div>
+      <div class="col2Log" align="center">
+        <input type="textLogin"  name="address" placeholder="Enter your password..">
+      </div>
+      <br>
+
+
+	    
+    <div class="row" align="center">
+    	
+      <input type="submit" value="LOGIN">
+      	
+    </div>
+	 <br>
+	 
+		
+  </form>
+</div>
+
+
+	</main>
+
+ 
+	
+	
+	
+	<div class="footer" >
+		<div id="bbb" style="margin-left:125px; margin-top: 0px; position:relative; float:left;">
+		  	
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="services.html">Shop Now</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff; " href="about.html">Know About Us</a></p>
+			    <p style="color:#ffffff; font-size: 15px"><a style="color:#ffffff;" href="appointment.html">Contact Us</a></p>
+			
+		
+		  </div>
+
+		  <div id="bbb" style="color:#1E9AFE; margin-right:125px; margin-top: 10px; position:relative; float:right; font-weight:bold">
+		  	
+		  		
+		  		
+		  		<p style="color:#1E9AFE; font-family: arial; font-size: 15px">Welcome To Car Market</p>
+		  		
+			    <p style="color:#ffffff; font-family: arial; font-size: 13px">Email us at : kulsinggh@gmail.com</p>
+			    
+			    <p style="color:#ffffff;font-family: arial; font-size: 13px">Call us at : 514-292-1514</p>
+			
+		
+		  </div>
+		 
+		 <div id ="icons" >
+		 	
+		     <a href="https://www.facebook.com/"><img src="images/fb.png" style="height:40px;width:40px;"> 
+			 <a href="https://twitter.com/login"><img src="images/twitter.png" style="height:40px;width:40px;"> 
+			 <a href="https://www.youtube.com/"><img src="images/youtube.png" style="height:40px;width:40px;">
+
+		  </div>
+		  <div>
+		  
+		   <p style="color:white; margin-top: 15px;">&copy;  Copyright 2018 Cegep College | Website by Hyundai World.</p>
+		   </div>
+		
+		</div>
+	
+</body>
+</html>
